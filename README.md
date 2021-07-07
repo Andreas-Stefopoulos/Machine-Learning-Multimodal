@@ -10,4 +10,4 @@ Overview of the files:
 
 As mentioned in the overview section, our task is to create a pipeline of machine learning and image preprocessing algorithms, in order to extract text from images (machine and hand written) and correct it using NLP algorithms. By using a variety of python libraries and applied many different techniques, we have successfully created a pipeline that extracts the text from images with high accuracy. This is performed by applying preprocess to the input image in order to assist the text extraction. This preprocess, on a high level, consists of cropping, rotating, applying filters and thresholds and then extract text and use NLP to correct it. Firstly, we will refer to the libraries we used and the different categories of algorithms we developed with them and then we will deconstruct the pipeline into segments and analyse them. 
 
-#Croppers 
+### Croppers 
