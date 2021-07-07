@@ -72,6 +72,6 @@ The **fifth step** is to apply the vocabulary-grammatical-syntactic error correc
 * Input of this step: 2 texts
 * Output of this step: 8 texts
 
-As a last step we may apply once again the "maxpooling" technique in order to have again only 2 texts, but in our code we chose to keep all 8 and print the text extraction of the original image by applying preprocess only in the text extraction, in order to compare the results.
+As a **last step** we may apply once again the "maxpooling" technique in order to have again only 2 texts, but in our code we chose to keep all 8 and print the text extraction of the original image by applying preprocess only in the text extraction, in order to compare the results.
 
 nbviewer link: [Text Extractor](https://nbviewer.jupyter.org/github/Andreas-Stefopoulos/Machine-Learning-Multimodal/blob/main/Text_Extraction.ipynb)
