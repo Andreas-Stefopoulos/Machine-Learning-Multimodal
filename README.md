@@ -48,7 +48,30 @@ After having extracted the text, we created vocabulary-grammatical-syntactic nat
 
 Now that we have mentioned our main algorithm categories, we will proceed to the deconstruction of our pipeline, which steps are applied and what output is in every step.
 
+The **first step**, after loading and image, is to apply the first preprocess algorithms category of croppers. We generate 3 new cropped images with 3 different techniques. 
+* Algorithms to crop: 3
+* Input of this step: 1 image
+* Output of this step: 3 cropped images
 
+The **second step**, is to apply the rotation algorithms to these 3 cropped images. We now generate 15 images from our 5 different rotation algorithms.
+* Algorithms to rotate: 5
+* Input of this step: 3 images
+* Output of this step: 15 rotated and cropped images
 
+The **third step** is now to extract the text of these 15 plus the 3 only cropped plus the original image, using our 3 different text extraction algorithms. The two algorithms were developed to recognize machine written text and the third one to recognize handwritten text in images. By applying these 3 different text extractors to all of our 19 images, we now have 57 texts.
+* Algorithms to extract text: 3
+* Input of this step: 19 images
+* Output of this step: 57 different texts
 
+The **fourth step** is to evaluate our texts and keep only the best of them. In order to do this, we calculate the length of each text and keep the one with max length from the machine written extractors and the one with max length from the handwritten extractor, assuming that the text with higher length is a text where the extractor managed to recognize more characters. The output of this step is only 2 texts, the "best" ones.
+* Input of this step: 57 texts
+* Output of this step: 2 texts
 
+The **fifth step** is to apply the vocabulary-grammatical-syntactic error correctors using the NLP algorthms we created. We developed 4 different algorithms and the output of this step are 8 texts.
+* NLP Algorithms: 4
+* Input of this step: 2 texts
+* Output of this step: 8 texts
+
+As a last step we may apply once again the "maxpooling" technique in order to have again only 2 texts, but in our code we chose to keep all 8 and print the text extraction of the original image by applying preprocess only in the text extraction, in order to compare the results.
+
+nbviwer link: [Text Extractor](https://nbviewer.jupyter.org/github/Andreas-Stefopoulos/Machine-Learning-Multimodal/blob/main/Text_Extraction.ipynb)
