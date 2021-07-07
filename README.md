@@ -14,7 +14,7 @@ As mentioned in the overview section, our task is to create a pipeline of machin
 
 In order to develop our cropping algorithms, we used the following libraries:
 
-* [Open Source Computer Vision](https://docs.opencv.org/3.4/index.html) (OpenCV)
+* [Open Source Computer Vision (OpenCV)](https://docs.opencv.org/3.4/index.html) 
 * [Numpy](https://numpy.org/doc/)
 
 Due to the power of [OpenCV](https://docs.opencv.org/3.4/index.html), we developed different approaches, in order to generalize as much as possible.
@@ -23,7 +23,7 @@ Due to the power of [OpenCV](https://docs.opencv.org/3.4/index.html), we develop
 
 Our second category of preprocess algorithms is the Rotators, where we apply them in order to allign the image, due to the high sensitivity in text extractors in errors in skewed images. The libraries used are:
 
-* [Open Source Computer Vision](https://docs.opencv.org/3.4/index.html) (OpenCV)
+* [Open Source Computer Vision (OpenCV)](https://docs.opencv.org/3.4/index.html) 
 * [Numpy](https://numpy.org/doc/)
 * [Tesseract](https://tesseract-ocr.github.io/)
 
@@ -31,20 +31,22 @@ Our second category of preprocess algorithms is the Rotators, where we apply the
 
 In order to extract the text from images, we created texts extraction algorithms using the following libraries:
 
-* [Space OCR API](https://ocr.space/ocrapi) API
+* [Space OCR API](https://ocr.space/ocrapi)
 * [Tesseract](https://tesseract-ocr.github.io/)
-* [Easy OCR](https://www.jaided.ai/) API
-* [Open Source Computer Vision](https://docs.opencv.org/3.4/index.html) (OpenCV)
+* [Easy OCR API](https://www.jaided.ai/) 
+* [Open Source Computer Vision (OpenCV)](https://docs.opencv.org/3.4/index.html) 
 * [Numpy](https://numpy.org/doc/)
 
 ### NLP Algorithms
 
 After having extracted the text, we created vocabulary-grammatical-syntactic natural language process (error checking and correcting) algorithms, using the following libraries:
 
-* [Ginger](https://www.gingersoftware.com/company-overview) API
+* [Ginger API](https://www.gingersoftware.com/company-overview) 
 * [Python Language Tool](https://languagetool.org/)
 * [TextBlob](https://textblob.readthedocs.io/en/dev/)
 * [Spell Checker](https://silpa.readthedocs.io/projects/spellchecker/en/latest/)
+
+Now that we have mentioned our main algorithm categories, we will proceed to the deconstruction of our pipeline, which steps are applied and what output is in every step.
 
 
 
